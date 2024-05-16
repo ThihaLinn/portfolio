@@ -13,7 +13,7 @@ const Projects = () => {
           <div className="w-96 h-56 overflow-hidden group">
             <Image
               alt=""
-              src={"/project.png"}
+              src={"/foodie-pos.png"}
               width={400}
               height={200}
               className="cursor-pointer w-96 h-56"
