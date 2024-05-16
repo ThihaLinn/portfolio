@@ -29,6 +29,7 @@ const About = () => {
       icon: <IoRocketSharp />,
     },
   ];
+  
 
   const skills = [
     {
