@@ -74,7 +74,7 @@ const SideBar = () => {
             <div
               onClick={() => move(tab.num)}
               key={tab.id}
-              className="flex justify-end items-center gap-3 p-4 text-2xl bg-[#e5e7eb] rounded-full text-[#04C2C9]"
+              className="flex justify-end items-center gap-3 p-4 text-2xl bg-[#e5e7eb] rounded-full text-[#04C2C9] cursor-pointer"
             >
               {tab.icon}
             </div>

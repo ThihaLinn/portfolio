@@ -43,7 +43,7 @@ const Contact = () => {
   return (
     <div className="bg-[#252934] ">
       <div className="h-[100vh]   mx-auto pt-20 relative">
-        <div className=" w-[70%] mx-auto">
+        <div className=" xl:w-[60%] lg:w-[70%] md:w-[80%] sm:w-[100%]  mx-auto">
           <div className="text-4xl font-bold text-white text-center ">
             CONTACT
           </div>

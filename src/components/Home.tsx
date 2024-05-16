@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div className="bg-[#252934] min-h-[100vh] flex justify-center items-center gap-2 ">
-      <div className="text-white text-3xl text-center">
+      <div className="text-white   xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-center">
         <div>
           Hello,I am <span className="text-[#E31B6D]">THIHA LINN.</span>
         </div>

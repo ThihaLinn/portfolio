@@ -75,13 +75,13 @@ const About = () => {
   ];
 
   return (
-    <div className="h-[100vh] bg-[#FFFFFF]  w-[70%] mx-auto py-7">
+    <div className="xl:h-[100vh]  bg-[#FFFFFF]  lg:w-[70%] xl:w-[70%] md:w-[70%] sm:w-[80%] w-[90%] mx-auto py-7">
       <div className="text-4xl font-bold text-gray-500 text-center ">
         <h3>ABOUT</h3>
-        <div className="mt-20 flex justify-between items-center">
+        <div className="xl:mt-20 lg:mt-20 md:mt-10 sm:mt-10 mt-5 grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
           {abouts.map((about) => {
             return (
-              <div className=" w-[300px] p-5 flex flex-col justify-center items-center">
+              <div className=" w-[300px] p-5 flex flex-col justify-center items-center mx-auto">
                 <div className=" w-40 h-36 bg-[#04C2C9] polygon  ">
                   <div className="flex items-center justify-center h-full text-white text-6xl">
                     {about.icon}
@@ -96,7 +96,7 @@ const About = () => {
           })}
         </div>
       </div>
-      <div className="grid grid-cols-2  mt-12 ">
+      <div className="grid xl:grid-cols-2  mt-12 ">
         <div className="grid grid-cols-1 text-center">
           <div className="w-64 h-56 bg-[#04C2C9] polygon bg-[url('/cat.jpg')] bg-cover mx-auto  "></div>
           <div className="font-bold text-gray-600 text-xl py-4">
@@ -106,7 +106,7 @@ const About = () => {
             I am a backend-developer in Yangon.I have serious passion in
             data-structure and createing intuitive, dynamic user experiences
           </div>
-          <div className="text-[#57BCE7] pt-3 font-semibold">
+          <div className="text-[#57BCE7] py-3 font-semibold">
             Let's make something special.
           </div>
         </div>
