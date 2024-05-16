@@ -29,7 +29,6 @@ const About = () => {
       icon: <IoRocketSharp />,
     },
   ];
-  
 
   const skills = [
     {
@@ -121,7 +120,8 @@ const About = () => {
                 </div>
                 <div className="w-[80%]   ">
                   <div
-                    className={`w-[${skill.percentage}%] bg-[#00A1A7] text-center    py-1`}
+                    className=" bg-[#00A1A7] text-center py-1 "
+                    style={{ width: `${skill.percentage}%` }}
                   >
                     {skill.percentage}%
                   </div>
