@@ -98,12 +98,12 @@ const About = () => {
       </div>
       <div className="grid grid-cols-2  mt-12 ">
         <div className="grid grid-cols-1 text-center">
-          <div className="w-64 h-56 bg-[#04C2C9] polygon bg-[url('/ThihaLinn.jpg')] bg-cover mx-auto  "></div>
+          <div className="w-64 h-56 bg-[#04C2C9] polygon bg-[url('/cat.jpg')] bg-cover mx-auto  "></div>
           <div className="font-bold text-gray-600 text-xl py-4">
             Who's this guy?
           </div>
           <div className="w-[350px] mx-auto">
-            I am a backend-developer in Yangon.I have serious passion for
+            I am a backend-developer in Yangon.I have serious passion in
             data-structure and createing intuitive, dynamic user experiences
           </div>
           <div className="text-[#57BCE7] pt-3 font-semibold">

@@ -1,9 +1,48 @@
 import React from "react";
+import { RiFacebookBoxFill } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import Link from "next/link";
 
 const Contact = () => {
+  const socialLinks = [
+    {
+      name: "Facebook",
+      link: "https://www.facebook.com/profile.php?id=100077728128062",
+      icon: <RiFacebookBoxFill />,
+      color: "#1e40af",
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/one_three_132",
+      icon: <FaSquareInstagram />,
+      color: "#991b1b",
+    },
+    {
+      name: "GitHub",
+      link: "https://github.com/ThihaLinn",
+      icon: <FaGithubSquare />,
+      color: "#030712",
+    },
+    {
+      name: "Linkedin",
+      link: "https://www.linkedin.com/in/thiha-linn-35a763297/",
+      icon: <FaLinkedin />,
+      color: "#1d4ed8",
+    },
+    {
+      name: "Twitter",
+      link: "https://twitter.com/thiha_lin",
+      icon: <FaSquareXTwitter />,
+      color: "#334155",
+    },
+  ];
+
   return (
     <div className="bg-[#252934] ">
-      <div className="h-[100vh]   mx-auto py-10 relative">
+      <div className="h-[100vh]   mx-auto pt-20 relative">
         <div className=" w-[70%] mx-auto">
           <div className="text-4xl font-bold text-white text-center ">
             CONTACT
@@ -50,8 +89,17 @@ const Contact = () => {
           </div>
         </div>
         <div className="absolute bottom-0 bg-[#1B242F] h-40 w-screen">
-          
-          
+          <div className="text-white flex justify-between items-center h-40 mx-auto w-[30%]">
+            {socialLinks.map((socialLink) => {
+              return (
+                <div className={`text-4xl hover:text-[${socialLink.color}] `}>
+                  <Link href={socialLink.link} className="">
+                    {socialLink.icon}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

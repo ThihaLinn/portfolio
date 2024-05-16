@@ -15,6 +15,7 @@ export default function index() {
       <About />
       <Projects />
       <Contact />
+      <SideBar />
     </div>
   );
 }
