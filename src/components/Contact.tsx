@@ -70,7 +70,7 @@ const Contact = () => {
 
               <div className="mt-4">
                 <textarea
-                  rows={10}
+                  rows={7}
                   placeholder="Your Message"
                   className="w-full bg-gray-800 rounded-md border-gray-700 text-white px-2 py-1"
                   id="description"
