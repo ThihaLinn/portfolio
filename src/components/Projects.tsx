@@ -4,7 +4,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className=" bg-[#F5F5F5]">
+    <div className=" bg-[#F5F5F5]"  id="3">
       <div className="h-[100vh]  w-[70%] mx-auto py-7">
         <div className="text-4xl font-bold text-gray-500 text-center ">
           <h3> PROJECTS</h3>

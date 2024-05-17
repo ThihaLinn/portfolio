@@ -42,7 +42,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-[#252934] ">
+    <div className="bg-[#252934] " id="4">
       <div className="h-[100vh]   mx-auto pt-20 relative">
         <div className=" xl:w-[60%] lg:w-[70%] md:w-[80%] sm:w-[100%]  mx-auto">
           <div className="text-4xl font-bold text-white text-center ">
@@ -52,7 +52,7 @@ const Contact = () => {
             Have a question or want to work together?
           </div>
           <div>
-            <div className="mt-4 flex flex-col bg-gray-900 rounded-lg p-4 w-[50%] mx-auto">
+            <div className="mt-4 flex flex-col bg-gray-900 rounded-lg p-4 w-[75%] md:w-[80%] lg:w-[70%] xl:w-[70%] mx-auto">
               <div className="mt-4">
                 <input
                   placeholder="Name"

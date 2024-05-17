@@ -75,7 +75,7 @@ const About = () => {
   ];
 
   return (
-    <div className="xl:h-[100vh]  bg-[#FFFFFF]  lg:w-[70%] xl:w-[70%] md:w-[70%] sm:w-[80%] w-[90%] mx-auto py-7">
+    <div className="xl:h-[100vh]  bg-[#FFFFFF]  lg:w-[70%] xl:w-[70%] md:w-[70%] sm:w-[80%] w-[90%] mx-auto py-7"  id="2">
       <div className="text-4xl font-bold text-gray-500 text-center ">
         <h3>ABOUT</h3>
         <div className="xl:mt-20 lg:mt-20 md:mt-10 sm:mt-10 mt-5 grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
@@ -103,7 +103,7 @@ const About = () => {
             Who's this guy?
           </div>
           <div className="w-[350px] mx-auto">
-            I am a backend-developer in Yangon.I have serious passion in
+            I am a backend-developer in Yangon.I have serious passion for
             data-structure and createing intuitive, dynamic user experiences
           </div>
           <div className="text-[#57BCE7] py-3 font-semibold">

@@ -6,6 +6,7 @@ import { AiFillProject } from "react-icons/ai";
 import { MdContacts } from "react-icons/md";
 import { Tab } from "@/types/tab";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const SideBar = () => {
   const initialTabs = [
@@ -59,25 +60,18 @@ const SideBar = () => {
     setTabs(allTabs);
   };
 
-  const move = (num: number) => {
-    window.scrollTo({
-      top: 957 * num,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <main>
       <div className="fixed top-1/3 xl:right-5 lg:right-5 right-3 grid grid-cols-1 gap-10 ">
         {tabs.map((tab) => {
           return (
-            <div
-              onClick={() => move(tab.num)}
+            <Link
+              href={`#${tab.id}`}
               key={tab.id}
               className="flex justify-end items-center gap-3 md:p-4  md:text-2xl sm:text-xl p-3 text-lg bg-[#e5e7eb] rounded-full text-[#04C2C9] cursor-pointer"
             >
               {tab.icon}
-            </div>
+            </Link>
           );
         })}
       </div>
