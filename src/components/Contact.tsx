@@ -5,6 +5,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import Link from "next/link";
+import clsx from "clsx";
 
 const Contact = () => {
   const socialLinks = [
@@ -89,14 +90,17 @@ const Contact = () => {
           </div>
         </div>
         <div className="absolute bottom-0 bg-[#1B242F] h-40 w-screen">
-          <div className="text-white flex justify-between items-center h-40 mx-auto w-[30%]">
+          <div className="text-white flex justify-around items-center h-40 mx-auto sm:w-[60%] md:w-[40%] xl:w-[30%] lg:w-[30%]">
             {socialLinks.map((socialLink) => {
               return (
-                <div className={`text-4xl hover:text-[${socialLink.color}] `}>
-                  <Link href={socialLink.link} className="">
-                    {socialLink.icon}
-                  </Link>
-                </div>
+                <Link
+                  href={socialLink.link}
+                  className={clsx(
+                    `text-4xl hover:text-[${socialLink.color}] shadow-2xl hover:-translate-y-1 transition-all duration-150 `
+                  )}
+                >
+                  <div className="">{socialLink.icon}</div>
+                </Link>
               );
             })}
           </div>

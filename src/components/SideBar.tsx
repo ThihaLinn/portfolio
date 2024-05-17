@@ -68,13 +68,13 @@ const SideBar = () => {
 
   return (
     <main>
-      <div className="fixed top-1/3  right-5 grid grid-cols-1 gap-10 ">
+      <div className="fixed top-1/3 xl:right-5 lg:right-5 right-3 grid grid-cols-1 gap-10 ">
         {tabs.map((tab) => {
           return (
             <div
               onClick={() => move(tab.num)}
               key={tab.id}
-              className="flex justify-end items-center gap-3 p-4 text-2xl bg-[#e5e7eb] rounded-full text-[#04C2C9] cursor-pointer"
+              className="flex justify-end items-center gap-3 md:p-4  md:text-2xl sm:text-xl p-3 text-lg bg-[#e5e7eb] rounded-full text-[#04C2C9] cursor-pointer"
             >
               {tab.icon}
             </div>
