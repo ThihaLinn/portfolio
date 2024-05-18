@@ -42,9 +42,9 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-[#252934] " id="4">
-      <div className="h-[100vh]   mx-auto pt-20 relative">
-        <div className=" xl:w-[60%] lg:w-[70%] md:w-[80%] sm:w-[100%]  mx-auto">
+    <div className="min-h-[100vh] bg-[#252934] " id="4">
+      <div className="   mx-auto pt-10 ">
+        <div className=" xl:w-[60%] lg:w-[70%] md:w-[80%] sm:w-[100%]  mx-auto ">
           <div className="text-4xl font-bold text-white text-center ">
             CONTACT
           </div>
@@ -52,7 +52,7 @@ const Contact = () => {
             Have a question or want to work together?
           </div>
           <div>
-            <div className="mt-4 flex flex-col bg-gray-900 rounded-lg p-4 w-[75%] md:w-[80%] lg:w-[70%] xl:w-[70%] mx-auto">
+            <div className="my-10 flex flex-col bg-gray-900 rounded-lg p-4  w-[75%] md:w-[80%] lg:w-[70%] xl:w-[70%] mx-auto">
               <div className="mt-4">
                 <input
                   placeholder="Name"
@@ -70,7 +70,7 @@ const Contact = () => {
 
               <div className="mt-4">
                 <textarea
-                  rows={7}
+                  rows={10}
                   placeholder="Your Message"
                   className="w-full bg-gray-800 rounded-md border-gray-700 text-white px-2 py-1"
                   id="description"
@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 bg-[#1B242F] h-40 w-screen">
+        <div className="relative top-20 bg-[#1B242F] h-40 w-screen">
           <div className="text-white flex justify-around items-center h-40 mx-auto sm:w-[60%] md:w-[40%] xl:w-[30%] lg:w-[30%]">
             {socialLinks.map((socialLink) => {
               return (
