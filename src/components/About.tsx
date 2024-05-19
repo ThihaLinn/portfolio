@@ -65,6 +65,10 @@ const About = () => {
       percentage: 75,
     },
     {
+      name:"Angular",
+      percentage:65
+    },
+    {
       name: "Mysql",
       percentage: 60,
     },
