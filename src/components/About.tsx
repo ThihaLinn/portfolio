@@ -75,7 +75,10 @@ const About = () => {
   ];
 
   return (
-    <div className="xl:h-[100vh]  bg-[#FFFFFF]  lg:w-[70%] xl:w-[70%] md:w-[70%] sm:w-[80%] w-[90%] mx-auto py-7"  id="2">
+    <div
+      className="xl:h-[100vh]  bg-[#FFFFFF]  lg:w-[70%] xl:w-[70%] md:w-[70%] sm:w-[80%] w-[90%] mx-auto py-7"
+      id="2"
+    >
       <div className="text-4xl font-bold text-gray-500 text-center ">
         <h3>ABOUT</h3>
         <div className="xl:mt-20 lg:mt-20 md:mt-10 sm:mt-10 mt-5 grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
@@ -115,7 +118,7 @@ const About = () => {
             console.log(skill.percentage);
             return (
               <div className=" text-white flex bg-[#EEEEEE] font-medium mb-3">
-                <div className="w-[20%] bg-[#04C2C9] text-center py-1">
+                <div className=" w-[25%] sm:w-[20%] bg-[#04C2C9] text-center py-1">
                   {skill.name}
                 </div>
                 <div className="w-[80%]   ">
