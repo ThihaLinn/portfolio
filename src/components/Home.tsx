@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Home = () => {
   return (
     <div className="bg-[#252934] min-h-[100vh] flex justify-center items-center gap-2 " id="1">

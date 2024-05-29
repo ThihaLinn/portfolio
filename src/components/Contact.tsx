@@ -42,17 +42,17 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-[100vh] bg-[#252934] " id="4">
-      <div className="   mx-auto pt-10 ">
-        <div className=" xl:w-[60%] lg:w-[70%] md:w-[80%] sm:w-[100%]  mx-auto ">
+    <div className="h-[100vh] bg-[#252934] my-auto" id="4">
+      <div className="mx-auto h-full">
+        <div className="mx-auto flex justify-evenly items-center flex-col h-full w-full ">
           <div className="text-4xl font-bold text-white text-center ">
             CONTACT
           </div>
-          <div className=" text-center text-xl text-[#04C2C9] py-10">
+          <div className=" text-center text-xl text-[#04C2C9] ">
             Have a question or want to work together?
           </div>
-          <div>
-            <div className="my-10 flex flex-col bg-gray-900 rounded-lg p-4  w-[75%] md:w-[80%] lg:w-[70%] xl:w-[70%] mx-auto">
+          <div className="w-3/4 lg:w-4/6 xl:w-3/6 mx-auto">
+            <div className="p-3 flex flex-col bg-gray-900 rounded-lg ">
               <div className="mt-4">
                 <input
                   placeholder="Name"
@@ -88,21 +88,21 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="relative top-20 bg-[#1B242F] h-40 w-screen">
-          <div className="text-white flex justify-around items-center h-40 mx-auto sm:w-[60%] md:w-[40%] xl:w-[30%] lg:w-[30%]">
-            {socialLinks.map((socialLink) => {
-              return (
-                <Link
-                  href={socialLink.link}
-                  className={clsx(
-                    `text-4xl hover:text-[${socialLink.color}] shadow-2xl hover:-translate-y-1 transition-all duration-150 `
-                  )}
-                >
-                  <div className="">{socialLink.icon}</div>
-                </Link>
-              );
-            })}
+          <div className=" w-[70%] md:w-[50%] lg:w-[30%]">
+            <div className=" flex justify-between">
+              {socialLinks.map((socialLink) => {
+                return (
+                  <Link
+                    href={socialLink.link}
+                    className={clsx(
+                      `text-4xl hover:text-[${socialLink.color}] shadow-2xl hover:-translate-y-1 transition-all duration-150 `
+                    )}
+                  >
+                    <div className="">{socialLink.icon}</div>
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

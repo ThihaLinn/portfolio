@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function index() {
   return (
-    <div>
+    <div className="w-screen scroll-smooth">
       <Home />
       <About />
       <Projects />

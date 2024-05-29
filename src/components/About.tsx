@@ -80,7 +80,7 @@ const About = () => {
 
   return (
     <div
-      className="xl:h-[100vh]  bg-[#FFFFFF]  lg:w-[70%] xl:w-[70%] md:w-[70%] sm:w-[80%] w-[90%] mx-auto py-7"
+      className="  bg-[#FFFFFF]  lg:w-[70%] xl:w-[70%] md:w-[70%] sm:w-[80%] w-[90%] mx-auto py-7 "
       id="2"
     >
       <div className="text-4xl font-bold text-gray-500 text-center ">
